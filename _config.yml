@@ -1,7 +1,7 @@
 title:            Notepad
 description:      "Blogging is fun"
 logo:             logo3.png
-disqus_shortname: hmfaysal
+disqus_shortname: cs2k
 share:            true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
@@ -14,12 +14,12 @@ owner:
   avatar:         hmfaysal.jpg
   email:          liu.l.leon@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Awesome Dude, Awesome Life
+  description:    Dreams keep me young
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        hmfaysal
-  facebook:       hmfaysal
-  github:         hmfaysal      
-  instagram:      hmfaysal
+  twitter:        leonliu
+  facebook:       leonliu
+  github:         leonliu
+  instagram:      leonliu
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    https://plus.google.com/u/0/102602916593522619858
 
@@ -57,14 +57,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  enable_coderay: false
-
-  coderay:
-    coderay_line_numbers: 
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+  syntax_highlighter: rouge
 
 prose:
   rooturl: '_posts'
