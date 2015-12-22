@@ -3,23 +3,46 @@ layout: post
 title: First Commit
 description: "Its ON, baby"
 headline: "Let's Fire up the Engines"
-categories: personal
-tags: 
-  - blogging
-  - jekyll
+categories: 
+  - personal
+tags: "blogging,jekyll"
 imagefeature: "website-speed.jpg"
 imagecredit: spreadeffect.com
 imagecreditlink: "http://www.spreadeffect.com/blog/improve-website-speed/"
 comments: false
-mathjax: null
+mathjax: false
 featured: true
 published: true
+modified: ""
 ---
+
 
 >&quot;The beginning is the most important part of the work.&quot;
 ><small><cite title="Plato">Plato</cite></small>
 
-I have been away from the blogging scene for quite a while now, suddenly today it dawned upon me that I need to start writing/posting again. My writing is a little bit rusty now, and I need to brush on that. Anyways, the moment I thought about blogging, Wordpress flashed in my mind. Well, I used Wordpress [^1] in the past and it worked well for a while, then I had to face issues like high-traffic and high CPU load and unexpected spikes in my server. Well, those weren’t too much trouble, I would avoid fixing those bugs if I was busy, and sometimes I would leave the system untouched for 2 days straight and let the server admins frown and try to mitigate the outage (I had a pretty straight forward deal with my hosting provider, that no matter what, they can’t shut down my website). The PHP runtime errors weren’t a big deal, the hundreds of thousands of SQL database queries weren’t a trouble, sometimes the site would run a tad bit slower than average, but it was OK overall for me. A sample of the emails I would receive from my hosting provider is given below:
+    sp<ResourceTable::Package> ResourceTable::getPackage(const String16& package)
+    {
+    	sp<Package> p = mPackages.valueFor(package);
+    	if (p == NULL) {
+    		if (mIsAppPackage) {
+    			if (mHaveAppPackage) {
+    				fprintf(stderr, "Adding multiple application package resources; only one is allowed.\n"
+    								"Use -x to create extended resources.\n");
+    			return NULL;
+   				}
+   				mHaveAppPackage = true;
+    			p = new Package(package, 127);
+    		} else {
+    			p = new Package(package, mNextPackageId);
+    		}
+    		//printf("*** NEW PACKAGE: \"%s\" id=%d\n",
+    		//       String8(package).string(), p->getAssignedId());
+    		mPackages.add(package, p);
+    		mOrderedPackages.add(p);
+    		mNextPackageId++;
+    	}
+    	return p;
+    }
 
     tickets@hostgator.com
     10/11/10
