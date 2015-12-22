@@ -16,6 +16,17 @@ published: true
 modified: ""
 ---
 
+大家都知道R.java，Android编译系统为我们自动生成访问各种资源对应的字符常量，避免手工编码和命名冲突。aapt工具就是生成R.java的幕后英雄。aapt是Android Asset Packaging Tool，顾名思义，就是Android资源打包工具。
+1. 一点背景
+在动态加载中，组件包如果包含资源文件，那么使用标准Android编译工具链打出来的包，资源ID很可能会和主包的资源ID发生冲突。修改定制aapt工具，就是解决方案之一。
+首先我们了解一下apk程序包中是如何管理资源文件的。大家都知道，.apk文件其实就是个压缩包，采用zip格式压缩。通常它包含.dex代码文件，签名文件和资源文件。资源有以下几种类型：
+- assets资源：在apk包的assets目录下存放。这些是没有压缩的原文件。assets资源直接通过文件路径访问，与系统设置无关。
+- res/drawable资源：位图及相关xml文件。根据系统分辨率、语言等信息，资源项可能对应不同的文件。
+- res/values资源：文字信息、数值信息等。同样，根据系统分辨率、语言的信息，资源项可能对于不同的值。
+2. 资源编码格式
+aapt将资源数据信息保存在一个二进制文件中，生成resources.arsc文件。每个资源项（资源名）会分配一个唯一的资源ID。aapt同时生成R.java文件，将资源ID与一个符号名相对应，以便在代码中访问。
+
+![aapt.png]({{site.baseurl}}/images/aapt.png)
 
     sp<ResourceTable::Package> ResourceTable::getPackage(const String16& package)
     {
