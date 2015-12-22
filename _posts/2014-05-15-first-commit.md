@@ -20,29 +20,29 @@ modified: ""
 >&quot;The beginning is the most important part of the work.&quot;
 ><small><cite title="Plato">Plato</cite></small>
 
-  sp<ResourceTable::Package> ResourceTable::getPackage(const String16& package)
-  {
-      sp<Package> p = mPackages.valueFor(package);
-      if (p == NULL) {
-          if (mIsAppPackage) {
-              if (mHaveAppPackage) {
-                  fprintf(stderr, "Adding multiple application package resources; only one is allowed.\n"
-                                  "Use -x to create extended resources.\n");
-                  return NULL;
-              }
-              mHaveAppPackage = true;
-              p = new Package(package, 127);
-          } else {
-              p = new Package(package, mNextPackageId);
-          }
-          //printf("*** NEW PACKAGE: \"%s\" id=%d\n",
-          //       String8(package).string(), p->getAssignedId());
-          mPackages.add(package, p);
-          mOrderedPackages.add(p);
-          mNextPackageId++;
-      }
-      return p;
-  }
+    sp<ResourceTable::Package> ResourceTable::getPackage(const String16& package)
+    {
+    	sp<Package> p = mPackages.valueFor(package);
+    	if (p == NULL) {
+    		if (mIsAppPackage) {
+    			if (mHaveAppPackage) {
+    				fprintf(stderr, "Adding multiple application package resources; only one is allowed.\n"
+    								"Use -x to create extended resources.\n");
+    			return NULL;
+   				}
+   				mHaveAppPackage = true;
+    			p = new Package(package, 127);
+    		} else {
+    			p = new Package(package, mNextPackageId);
+    		}
+    		//printf("*** NEW PACKAGE: \"%s\" id=%d\n",
+    		//       String8(package).string(), p->getAssignedId());
+    		mPackages.add(package, p);
+    		mOrderedPackages.add(p);
+    		mNextPackageId++;
+    	}
+    	return p;
+    }
 
     tickets@hostgator.com
     10/11/10
