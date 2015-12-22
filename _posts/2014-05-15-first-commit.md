@@ -19,7 +19,7 @@ modified: ""
 
 >&quot;The beginning is the most important part of the work.&quot;
 ><small><cite title="Plato">Plato</cite></small>
-
+```C
     sp<ResourceTable::Package> ResourceTable::getPackage(const String16& package)
     {
     	sp<Package> p = mPackages.valueFor(package);
@@ -43,22 +43,7 @@ modified: ""
     	}
     	return p;
     }
-
-    tickets@hostgator.com
-    10/11/10
-    
-    to hmfaysal 
-    Hello, 
-    
-    
-    I apologize, but I was forced to suspend the script "/home/hmfaysal/public_html/hmfaysal.com/index.php" as it was causing a high load on the server, and due to it affecting all of the other accounts on the system, I was forced to take immediate action for the health of the server.g 
-    
-    I did notice that this was a Wordpress installation, and would recommend that you enable caching for it.
-    
-    Please note that if you already have caching enabled, you will need to take more action such as looking into any high use modules or plugins, and seeing if there are any updates, or possibly any that you can disable to reduce the load that your site causes. 
-    
-    If you reply back to this with your IP address (http://www.hostgator.com/ip.shtml) we will be more than happy to go ahead enable HTTP access for you, so that you can safely work on the script without it causing further issues. Please let me know how you would like to proceed.  
-  
+ ```C
   
 But the game was changed when my site got hacked. Wordpress is notorious in getting hacked. The PHP code libraries are huge, and while Automattic tries to keep it relatively clean and bug free, bugs do persist among the thousands of lines of codes and every once in a while a bug gets discovered by the code breakers. If the bug can be exploited in some way to gain access of the site, the code breakers tend to do some serious damage. While I wasn’t been exclusively targeted by such individuals, I was part of a victimized group who used the same version of Wordpress, and all of our sites got defaced by some mass defacing software. Although it didn’t do serious damage, as I have daily off-site backup, I became dubious about the Wordpress platform.
 
