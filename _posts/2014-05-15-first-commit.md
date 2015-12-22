@@ -19,6 +19,7 @@ modified: ""
 
 >&quot;The beginning is the most important part of the work.&quot;
 ><small><cite title="Plato">Plato</cite></small>
+
     sp<ResourceTable::Package> ResourceTable::getPackage(const String16& package)
     {
       sp<Package> p = mPackages.valueFor(package);
