@@ -1,4 +1,7 @@
-theme: minima
 title: "Learning by sharing"
 description: "Miscellaneous article written before and now"
 author: "Leon Liu(CS2K)"
+plugins:
+  - jekyll-remote-theme
+
+remote_theme: ngzhio/jekyll-theme-hamilton
