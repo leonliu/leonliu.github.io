@@ -1,6 +1,7 @@
-title: "Learning by sharing"
+title: "LEARNING BY SHARING"
 description: "Miscellaneous article written before and now"
 author: "Leon Liu(CS2K)"
+url: https://leonliu.github.io
 plugins:
   - jekyll-remote-theme
 
