@@ -1,7 +1,8 @@
 title: "LEARNING BY SHARING"
-description: "Miscellaneous article written before and now"
+description: "Where I keep things recorded and shared!"
 author: "Leon Liu(CS2K)"
-url: https://leonliu.github.io
+name: "Leon Liu"
+url: "https://leonliu.github.io"
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
