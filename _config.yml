@@ -1,20 +1,39 @@
-title: "LEARNING BY SHARING"
-description: "Where I keep things recorded and shared!"
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# site settings
+locale: "en-US"
+title: "Learning By Sharing"
+title_separator: "-"
+subtitle: "All about awesome things!"
+name: &name "Leon Liu" # &name is a YAML anchor which can be *referenced later
+description: &description "Blogs for programming, music, traveling, all the fun stuffs."
 author: "Leon Liu(CS2K)"
 name: "Leon Liu"
 url: "https://leonliu.github.io"
-plugins:
-  - jekyll-remote-theme
-  - jekyll-include-cache
+repository: "leonliu/leonliu.github.io"
+teaser: "/assets/img/teaser.jpeg" # path of fallback teaser image
+logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title: # overrides the website title displayed in the masthead, use " " for no title
+# breadcrumbs            : false # true, false (default)
+words_per_minute: 200
 
-remote_theme: mmistakes/minimal-mistakes@4.24.0
+atom_feed:
+  path: # blank (default) uses feed.xml
+
+search: true # true, false (default)
+search_full_content: true # true, false (default)
+search_provider: lunr # lunr (default), algolia
+lunr:
+  search_within_pages: true
 
 # Site Author
 author:
   name: "Leon Liu"
   avatar: "/assets/img/avatar.png"
-  bio: "Programmer, Cyclist and mountaineer."
-  location: "Auckland NZ"
+  bio: "Programmer, music lover and mountaineer."
+  location: "Auckland, NZ"
   email: "liu.l.leon@gmail.com"
   links:
     - label: "Email"
@@ -51,3 +70,66 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "docs"
+  # _recipes
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _pets
+  - scope:
+      path: ""
+      type: pets
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
