@@ -11,18 +11,18 @@ remote_theme: mmistakes/minimal-mistakes@4.24.0
 
 # Site Author
 author:
-  name             : "Leon Liu"
-  avatar           : "assets/img/avatar.png"
-  bio              : "Programmer, Cyclist and mountaineer."
-  location         : "Somewhere"
-  email            :
+  name: "Leon Liu"
+  avatar: "/assets/img/avatar.png"
+  bio: "Programmer, Cyclist and mountaineer."
+  location: "Auckland NZ"
+  email: "liu.l.leon@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:liu.l.leon@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://your-website.com"
+      url: "https://leonliu.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/"
