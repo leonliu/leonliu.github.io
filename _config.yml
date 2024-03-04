@@ -4,5 +4,6 @@ author: "Leon Liu(CS2K)"
 url: https://leonliu.github.io
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache
 
-remote_theme: ngzhio/jekyll-theme-hamilton
+remote_theme: mmistakes/minimal-mistakes@4.24.0
