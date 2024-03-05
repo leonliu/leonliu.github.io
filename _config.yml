@@ -30,6 +30,12 @@ search_provider: lunr # lunr (default), algolia
 lunr:
   search_within_pages: true
 
+# comment
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "leonliu-github-io"
+
 # Site Author
 author:
   name: "Leon Liu"
