@@ -14,7 +14,7 @@ name: "Leon Liu"
 url: "https://leonliu.github.io"
 repository: "leonliu/leonliu.github.io"
 teaser: "/assets/img/teaser.jpeg" # path of fallback teaser image
-logo: ”/assets/img/logo.png“
+logo: "/assets/img/logo.png"
 
 # masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
