@@ -45,7 +45,9 @@ SHA256 hash值，这样把已经提交的区块“链接”起来，另外所有
 
 ![technology](/assets/img/blockchain-tech.png)
 
-P2P网络 – 中央服务网络
+### P2P网络
+
+***P2P网络 – 中央服务网络***
 
 ![p2p central](/assets/img/p2p-net.png)
 
@@ -65,7 +67,7 @@ P2P网络 – 中央服务网络
 * Server是单点，容灾性不好
 * 可扩展性不好，受server限制
 
-P2P网络 – 完全对等网络
+***P2P网络 – 完全对等网络***
 
 ![p2p peer](/assets/img/p2p-peer.png)
 
@@ -84,7 +86,7 @@ P2P网络 – 完全对等网络
 * 查询慢
 * 广播方式消耗带宽
 
-P2P网络 – 层级式网络
+***P2P网络 – 层级式网络***
 
 ![p2p hierarchy](/assets/img/p2p-hierarchy.png)
 
@@ -102,7 +104,7 @@ P2P网络 – 层级式网络
 
 * 超级节点发生掉线时需要重新配置
 
-P2P网络 – 分布式哈希（DHT）网络
+***P2P网络 – 分布式哈希（DHT）网络***
 
 ![p2p DHT](/assets/img/p2p-dht.png)
 
@@ -121,7 +123,7 @@ DHT网络的缺点：
 
 * 容错能力有限
 
-P2P网络 - BitTorrent
+***P2P网络 - BitTorrent***
 
 ![bittorrent](/assets/img/bittorent.png)
 
@@ -141,7 +143,9 @@ Bittorrent的网络交互流程
 
 ![bittorrent handshake](/assets/img/bittorent-flow.png)
 
-分布式系统的一致性问题
+### 分布式系统
+
+***分布式系统的一致性问题***
 
 ![consistence](/assets/img/accordance.png)
 
@@ -208,7 +212,7 @@ Hash（上一个区块的hash值，交易记录集，随机数） = 0000aFD635BC
 
 这是个猜谜的过程，计算量是16的n次方，n是开头0的个数
 
-***密码学与安全技术***
+### 密码学与安全技术
 
 一个典型交易过程
 
