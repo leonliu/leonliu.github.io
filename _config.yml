@@ -1,16 +1,14 @@
 remote_theme: mmistakes/minimal-mistakes@4.24.0
 
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # site settings
 locale: "en-US"
-title: "Learning By Sharing"
+title: "Leon Liu"
 title_separator: "-"
-subtitle: "All about awesome things!"
+subtitle: "Indie developer · curious about many things"
 name: &name "Leon Liu" # &name is a YAML anchor which can be *referenced later
-description: &description "Blogs for programming, music, traveling, all the fun stuffs."
-author: "Leon Liu(CS2K)"
-name: "Leon Liu"
+description: &description "Notes on software, things I'm curious about, and products I build."
 url: "https://leonliu.github.io"
 repository: "leonliu/leonliu.github.io"
 teaser: "/assets/img/teaser.jpeg" # path of fallback teaser image
@@ -26,9 +24,7 @@ atom_feed:
 
 search: true # true, false (default)
 search_full_content: true # true, false (default)
-search_provider: google # lunr (default), algolia
-google:
-  search_engine_id: "410557ea02ba243fd"
+search_provider: lunr
 
 # comment
 comments:
@@ -52,31 +48,16 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/l14967"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leonliu"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/leonliu"
 
 # Defaults
 defaults:
@@ -86,7 +67,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       show_date: true
       comments: true
@@ -98,7 +79,23 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true 
+      author_profile: false
+      comments: false
+
+include:
+  - _pages
+
+main:
+  - title: "Writing"
+    url: /blog/
+  - title: "Products"
+    url: /products/
+  - title: "Support"
+    url: /support/
+  - title: "About"
+    url: /about/
+  - title: "Contact"
+    url: /contact/
 
 plugins:
   - jekyll-remote-theme

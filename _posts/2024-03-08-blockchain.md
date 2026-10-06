@@ -1,6 +1,7 @@
 ---
 title: "Blockchain 技术简介"
 date: 2024-03-08
+categories: [Blockchain]
 ---
 ## 区块链的前世今生
 
